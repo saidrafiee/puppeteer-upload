@@ -1,0 +1,24 @@
+<!-- test-cam.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test Fake Webcam</title>
+  </head>
+  <body>
+    <h1>Fake Camera Test</h1>
+    <video id="video" width="640" height="480" autoplay playsinline></video>
+
+    <script>
+      navigator.mediaDevices
+        .getUserMedia({ video: true })
+        .then((stream) => {
+          const video = document.getElementById("video");
+          video.srcObject = stream;
+        })
+        .catch((err) => {
+          console.error("Camera Error:", err);
+        });
+    </script>
+  </body>
+</html>
