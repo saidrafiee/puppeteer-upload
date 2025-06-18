@@ -4,7 +4,7 @@ const fs = require("fs").promises;
 const path = require("path");
 
 const bukaBrowser = async () => {
-  const videoPath = path.resolve(__dirname, "foto", "foto.y4m"); // pastikan output.y4m sudah ada
+  const videoPath = path.resolve(__dirname, "foto", "sahara.y4m"); // pastikan output.y4m sudah ada
   // Load data dari nop.json
   const data = await fs.readFile("nop.json", "utf8");
   const daftarNop = JSON.parse(data);
@@ -54,9 +54,9 @@ const bukaBrowser = async () => {
   await page.reload();
 
   ////////////////////////// SESUAIKAN LINK SDT YANG INGIN DI INPUT //////////////////////////
-  await page.goto(
-    "https://simpbb.bapenda.pekanbaru.go.id/bo/petugassdt/detail?id=3375"
-  );
+  const sdt =
+    "https://simpbb.bapenda.pekanbaru.go.id/bo/petugassdt/detail?id=3362&page=1";
+  await page.goto(sdt);
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
   // Jalankan fungsi isiFormulirDanSubmit untuk setiap NOP
@@ -120,9 +120,16 @@ async function isiFormulirDanSubmit(page, nop, nama, hp, ket) {
       el.removeAttribute("readonly");
     }
   });
+  
   ///////////////////////////////////// SESUAIKAN KOORDINATNYA /////////////////////////////////////
-  const randomLatitude = (Math.random() * (0.6 - 0.5) + 0.5).toFixed(6);
-  const randomLongitude = (Math.random() * (101.5 - 101.4) + 101.4).toFixed(6);
+  const randomLatitude = (
+    Math.random() * (0.48686 - 0.48586) +
+    0.48586
+  ).toFixed(8);
+  const randomLongitude = (
+    Math.random() * (101.4905 - 101.48965) +
+    101.48965
+  ).toFixed(8);
   const koordinat = `${randomLatitude},${randomLongitude}`;
 
   await page.click("#KOORDINAT_OP", { clickCount: 3 });
@@ -141,12 +148,16 @@ async function isiFormulirDanSubmit(page, nop, nama, hp, ket) {
   await page.keyboard.press("Backspace");
   await page.type("#KETERANGAN_PETUGAS", ket);
 
-  // await page.click("#w4 > div > div.row > div > div:nth-child(4) > input");
+  await page.click("#w4 > div > div.row > div > div:nth-child(4) > input");
 
   await new Promise((resolve) => setTimeout(resolve, 2000));
-  await page.click(
-    "#w4 > div > div.row > div > div.form-group.text-right > button.btn.btn-sm.btn-danger" //keluar
-  );
+
+  await page.click("#btn-sdt"); //submit
+
+  // await page.click(
+  //   "#w4 > div > div.row > div > div.form-group.text-right > button.btn.btn-sm.btn-danger"); //keluar
+
+  await page.waitForSelector("#modalsdt > div > div > div", { hidden: true });
 
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
