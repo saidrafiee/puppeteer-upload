@@ -4,7 +4,7 @@ const fs = require("fs").promises;
 const path = require("path");
 
 const bukaBrowser = async () => {
-  const videoPath = path.resolve(__dirname, "foto", "sahara.y4m"); // pastikan output.y4m sudah ada
+  const videoPath = path.resolve(__dirname, "foto", process.env.FOTO); // pastikan output.y4m sudah ada
   // Load data dari nop.json
   const data = await fs.readFile("nop.json", "utf8");
   const daftarNop = JSON.parse(data);
@@ -54,8 +54,7 @@ const bukaBrowser = async () => {
   await page.reload();
 
   ////////////////////////// SESUAIKAN LINK SDT YANG INGIN DI INPUT //////////////////////////
-  const sdt =
-    "https://simpbb.bapenda.pekanbaru.go.id/bo/petugassdt/detail?id=3362&page=1";
+  const sdt = process.env.NAMA_SDT;
   await page.goto(sdt);
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
@@ -120,16 +119,19 @@ async function isiFormulirDanSubmit(page, nop, nama, hp, ket) {
       el.removeAttribute("readonly");
     }
   });
-  
+
   ///////////////////////////////////// SESUAIKAN KOORDINATNYA /////////////////////////////////////
-  const randomLatitude = (
-    Math.random() * (0.48686 - 0.48586) +
-    0.48586
-  ).toFixed(8);
-  const randomLongitude = (
-    Math.random() * (101.4905 - 101.48965) +
-    101.48965
-  ).toFixed(8);
+
+  const maxLat = 0.484;
+  const minLat = 0.4819;
+  const maxLon = 101.4865;
+  const minLon = 101.4843;
+  const randomLatitude = (Math.random() * (maxLat - minLat) + minLat).toFixed(
+    8
+  );
+  const randomLongitude = (Math.random() * (maxLon - minLon) + minLon).toFixed(
+    8
+  );
   const koordinat = `${randomLatitude},${randomLongitude}`;
 
   await page.click("#KOORDINAT_OP", { clickCount: 3 });
@@ -150,16 +152,17 @@ async function isiFormulirDanSubmit(page, nop, nama, hp, ket) {
 
   await page.click("#w4 > div > div.row > div > div:nth-child(4) > input");
 
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  await new Promise((resolve) => setTimeout(resolve, 500));
 
   await page.click("#btn-sdt"); //submit
 
   // await page.click(
-  //   "#w4 > div > div.row > div > div.form-group.text-right > button.btn.btn-sm.btn-danger"); //keluar
+  //   "#w4 > div > div.row > div > div.form-group.text-right > button.btn.btn-sm.btn-danger"
+  // ); //keluar
 
   await page.waitForSelector("#modalsdt > div > div > div", { hidden: true });
 
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   console.log(`✅ Berhasil input NOP: ${nop}`);
 }

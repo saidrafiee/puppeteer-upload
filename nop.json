@@ -1,212 +1,268 @@
 [
-    {
-        "id": "1",
-        "nop": "147114000500801290",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "2",
-        "nop": "147114000500827950",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "3",
-        "nop": "147114000500829290",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "4",
-        "nop": "147114000500829300",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "5",
-        "nop": "147114000500829310",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "6",
-        "nop": "147114000500829320",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "7",
-        "nop": "147114000500829330",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "8",
-        "nop": "147114000500829340",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "9",
-        "nop": "147114000500829350",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "10",
-        "nop": "147114000500829380",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "11",
-        "nop": "147114000500829480",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "12",
-        "nop": "147114000500829490",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "13",
-        "nop": "147114000500829500",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "14",
-        "nop": "147114000500829670",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "15",
-        "nop": "147114000500829680",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "16",
-        "nop": "147114000500829690",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "17",
-        "nop": "147114000500829700",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "18",
-        "nop": "147114000500829710",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "19",
-        "nop": "147114000500829720",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "20",
-        "nop": "147114000500829730",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "21",
-        "nop": "147114000500829740",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "22",
-        "nop": "147114000500829750",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "23",
-        "nop": "147110000300830090",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "24",
-        "nop": "147110000300830120",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "25",
-        "nop": "147110000300812580",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "26",
-        "nop": "147110000300831670",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "27",
-        "nop": "147110000300832090",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "28",
-        "nop": "147110000300832900",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "29",
-        "nop": "147110000300832910",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    },
-    {
-        "id": "30",
-        "nop": "147110000300833550",
-        "nama": "SADIQ",
-        "hp": "081371360004",
-        "ket": "TERSAMPAIKAN KEPADA DEVELOPER"
-    }
+  {
+    "id": "1",
+    "nop": "147114000500800420",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "2",
+    "nop": "147114000500800500",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "3",
+    "nop": "147114000500801820",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "4",
+    "nop": "147114000500801840",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "5",
+    "nop": "147114000500804290",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "6",
+    "nop": "147114000500806110",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "7",
+    "nop": "147114000500819900",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "8",
+    "nop": "147114000500827030",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "9",
+    "nop": "147114000500835630",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "10",
+    "nop": "147114000501022110",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "11",
+    "nop": "147110000300519210",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "12",
+    "nop": "147110000300521650",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "13",
+    "nop": "147110000300818010",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "14",
+    "nop": "147110000300819020",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "15",
+    "nop": "147110000300821140",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "16",
+    "nop": "147110000300822010",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "17",
+    "nop": "147110000300826640",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "18",
+    "nop": "147110000300826680",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "19",
+    "nop": "147110000300826940",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "20",
+    "nop": "147110000300827150",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "21",
+    "nop": "147110000300827250",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "22",
+    "nop": "147110000300827980",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "23",
+    "nop": "147110000300828950",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "24",
+    "nop": "147110000300830310",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "25",
+    "nop": "147110000300830440",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "26",
+    "nop": "147110000300831590",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "27",
+    "nop": "147110000300832180",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "28",
+    "nop": "147110000300832370",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "29",
+    "nop": "147110000300832880",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "30",
+    "nop": "147110000300832980",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "31",
+    "nop": "147110000300832990",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "32",
+    "nop": "147110000300833930",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "33",
+    "nop": "147110000301021650",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "34",
+    "nop": "147110000301021750",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "35",
+    "nop": "147110000301021770",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "36",
+    "nop": "147110000301023130",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "37",
+    "nop": "147110000301026290",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  },
+  {
+    "id": "38",
+    "nop": "147110000301026780",
+    "nama": "Edi Priyanto",
+    "hp": "081275341009",
+    "ket": "Tersampaikan kepada RT"
+  }
 ]
