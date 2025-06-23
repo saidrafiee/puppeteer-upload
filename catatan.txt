@@ -1,4 +1,6 @@
-ffmpeg -loop 1 -i forest2.jpg -t 10 -pix_fmt yuv420p output.y4m (jpg)
+ffmpeg -loop 1 -framerate 30 -t 10 -i cendanabukit.jpeg -vf "scale=640:480" -pix_fmt yuv420p -f yuv4mpegpipe cendanabukit.y4m
+
+ffmpeg -loop 1 -i bukitbarisan.jpg -t 10 -pix_fmt yuv420p bukitbarisan.y4m (jpg)
 ffmpeg -i test.mp4 -f yuv4mpegpipe -pix_fmt yuv420p test.y4m (mp4)
 
 
@@ -7,3 +9,17 @@ PHPSESSID_COOKIE=___
 TOKEN_COOKIE=___
 FOTO=___
 NAMA_SDT=___
+
+
+ //kode koordinat lama
+  const maxLat = 0.484;
+  const minLat = 0.4819;
+  const maxLon = 101.4865;
+  const minLon = 101.4843;
+  const randomLatitude = (Math.random() * (maxLat - minLat) + minLat).toFixed(
+    8
+  );
+  const randomLongitude = (Math.random() * (maxLon - minLon) + minLon).toFixed(
+    8
+  );
+  const koordinat = `${randomLatitude},${randomLongitude}`;

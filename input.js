@@ -60,7 +60,7 @@ const bukaBrowser = async () => {
 
   // Jalankan fungsi isiFormulirDanSubmit untuk setiap NOP
   for (const entry of daftarNop) {
-    console.log(`Memproses NOP: ${entry.nop} (${entry.nama})`);
+    console.log(`Memproses NOP: ${entry.nop} (${entry.nama}) [${entry.id}]`);
     try {
       await isiFormulirDanSubmit(
         page,
@@ -122,17 +122,30 @@ async function isiFormulirDanSubmit(page, nop, nama, hp, ket) {
 
   ///////////////////////////////////// SESUAIKAN KOORDINATNYA /////////////////////////////////////
 
-  const maxLat = 0.484;
-  const minLat = 0.4819;
-  const maxLon = 101.4865;
-  const minLon = 101.4843;
-  const randomLatitude = (Math.random() * (maxLat - minLat) + minLat).toFixed(
-    8
-  );
-  const randomLongitude = (Math.random() * (maxLon - minLon) + minLon).toFixed(
-    8
-  );
-  const koordinat = `${randomLatitude},${randomLongitude}`;
+const A = { lat: 0.4921, lon: 101.4906 }; // Titik A (pojok kiri bawah)
+const B = { lat: 0.4913, lon: 101.4919 }; // Titik B (pojok kanan bawah)
+const C = { lat: 0.4847, lon: 101.4906 }; // Titik C (pojok kanan atas)
+const D = { lat: 0.4897, lon: 101.4888 }; // Titik D (pojok kiri atas)
+
+  // Langkah 1: Dapatkan vektor AB dan AD
+  const AB = {
+    lat: B.lat - A.lat,
+    lon: B.lon - A.lon,
+  };
+  const AD = {
+    lat: D.lat - A.lat,
+    lon: D.lon - A.lon,
+  };
+
+  // Langkah 2: Buat dua random value
+  const u = Math.random(); // arah AB
+  const v = Math.random(); // arah AD
+
+  // Langkah 3: Hitung titik di dalam jajar genjang
+  const randomLat = A.lat + u * AB.lat + v * AD.lat;
+  const randomLon = A.lon + u * AB.lon + v * AD.lon;
+  const koordinat = `${randomLat.toFixed(8)},${randomLon.toFixed(8)}`;
+  console.log(koordinat);
 
   await page.click("#KOORDINAT_OP", { clickCount: 3 });
   await page.keyboard.press("Backspace");
